@@ -1,72 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Айыл Банк - Проект Практики</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Айыл Банк — Главная</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Хидер -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌾</span>
+        <span class="logo-text">Айыл Банк</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#credits">Кредиты</a>
+        <a href="#cards">Карты</a>
+        <a href="#exchange">Курсы валют</a>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <div class="container">
-            <div class="logo">АЙЫЛ БАНК</div>
-            <nav>
-                <a href="#">Услуги</a>
-                <a href="#">Курсы</a>
-                <a href="#">Контакты</a>
-            </nav>
+  <!-- Главный блок -->
+  <section class="hero">
+    <h1>Банк для села и города</h1>
+    <p>Кредиты для фермеров, карты, вклады и обмен валют. Работаем с 1996 года.</p>
+    <button class="btn-primary">Оформить кредит</button>
+  </section>
+
+  <!-- Кредиты -->
+  <section class="section" id="credits">
+    <h2>Кредиты</h2>
+    <div class="credits-list">
+      <div class="credit-item">
+        <div class="credit-icon">🌾</div>
+        <div class="credit-info">
+          <h3>«Түшүм» — на посевную</h3>
+          <p>Срок до 18 месяцев, льготный период, сумма до 1 млн сом.</p>
         </div>
-    </header>
-
-    <section class="banner">
-        <div class="container">
-            <h1>Банковские услуги в г. Гульча</h1>
-            <p>Надежность, проверенная временем. Работаем для вас.</p>
+      </div>
+      <div class="credit-item">
+        <div class="credit-icon">🐄</div>
+        <div class="credit-info">
+          <h3>«Мал-Кредит» — животноводство</h3>
+          <p>Покупка скота, до 2 млн сом, ставка от 10%.</p>
         </div>
-    </section>
-
-    <main class="container">
-        
-        <h2 class="section-title">Курсы валют</h2>
-        <div class="rates-grid">
-            <div class="rate-item">
-                <b>USD</b>
-                <span>89.10 / 89.90</span>
-            </div>
-            <div class="rate-item">
-                <b>EUR</b>
-                <span>95.50 / 96.80</span>
-            </div>
-            <div class="rate-item">
-                <b>RUB</b>
-                <span>0.96 / 1.02</span>
-            </div>
+      </div>
+      <div class="credit-item">
+        <div class="credit-icon">🏠</div>
+        <div class="credit-info">
+          <h3>Ипотека «Айыл-Үй»</h3>
+          <p>Строительство и покупка жилья, от 8% годовых.</p>
         </div>
-
-        <h2 class="section-title">Заявка на кредит</h2>
-        <div class="form-box">
-            <form>
-                <input type="text" placeholder="Ваше ФИО" required>
-                <input type="tel" placeholder="Номер телефона" required>
-                <select>
-                    <option>Потребительский кредит</option>
-                    <option>Агро-кредит</option>
-                    <option>Карта Элкарт</option>
-                </select>
-                <button type="submit">Оставить заявку</button>
-            </form>
+      </div>
+      <div class="credit-item">
+        <div class="credit-icon">⚙️</div>
+        <div class="credit-info">
+          <h3>Лизинг техники</h3>
+          <p>Сельхозтехника в лизинг, тракторы, комбайны.</p>
         </div>
+      </div>
+    </div>
+  </section>
 
-    </main>
+  <!-- Карты -->
+  <section class="section" id="cards">
+    <h2>Банковские карты</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>💳 «Элдик»</h3>
+        <p>Бесплатное обслуживание, кэшбэк 5%.</p>
+      </div>
+      <div class="card">
+        <h3>💳 Visa Gold</h3>
+        <p>Премиум-карта, страхование, лимит 500 тыс.</p>
+      </div>
+      <div class="card">
+        <h3>💳 Зарплатная</h3>
+        <p>Для сотрудников. Бесплатное СМС.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>ОАО "Айыл Банк" | Филиал Гульча</p>
-            <p>Выполнил студент: Эмилбек уулу Эрбол</p>
-        </div>
-    </footer>
+  <!-- Курсы валют -->
+  <section class="section" id="exchange">
+    <h2>Курсы обмена валют</h2>
+    <table class="exchange-table">
+      <tr><th>Валюта</th><th>Покупка</th><th>Продажа</th></tr>
+      <tr><td>🇺🇸 USD</td><td>87.50</td><td>88.90</td></tr>
+      <tr><td>🇪🇺 EUR</td><td>95.20</td><td>97.10</td></tr>
+      <tr><td>🇷🇺 RUB</td><td>0.95</td><td>1.02</td></tr>
+      <tr><td>🇰🇿 KZT</td><td>0.18</td><td>0.20</td></tr>
+    </table>
+  </section>
 
+  <!-- Контакты -->
+  <footer class="footer" id="contacts">
+    <p><strong>Айыл Банк</strong> — ОАО, лицензия НБКР №043</p>
+    <p>📞 4411 (круглосуточно) | ✉️ info@ayilbank.kg</p>
+    <p>г. Бишкек, ул. Токтогула 98</p>
+    <p class="copyright">© 1996–2026 Айыл Банк</p>
+  </footer>
 </body>
-  </html>
-  
+            </html>
